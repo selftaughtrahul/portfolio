@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Details - Rahul's Portfolio">
+    <title>Project Details | Rahul - Software Professional</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background: rgba(10,10,30,0.95) !important;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="brand-accent">&lt;</span>Rahul Chauhan<span class="brand-accent"> /&gt;</span>
+            </a>
+            <a href="index.html#projects" class="btn btn-outline-custom btn-sm ms-auto">
+                <i class="bi bi-arrow-left me-2"></i>Back to Projects
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===================== PROJECT DETAIL ===================== -->
+    <section class="project-detail-section">
+        <div class="container">
+            <!-- Loading State -->
+            <div id="projectLoading" class="text-center py-5">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-3 text-muted">Loading project details...</p>
+            </div>
+
+            <!-- Project Content (hidden until loaded) -->
+            <div id="projectContent" style="display: none;">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-4" data-aos="fade-up">
+                    <ol class="breadcrumb custom-breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html#projects">Projects</a></li>
+                        <li class="breadcrumb-item active" id="breadcrumbTitle">Project Name</li>
+                    </ol>
+                </nav>
+
+                <!-- Project Header -->
+                <div class="project-detail-header" data-aos="fade-up">
+                    <span class="project-detail-category" id="projectCategory">Category</span>
+                    <h1 class="project-detail-title" id="projectTitle">Project Title</h1>
+                    <p class="project-detail-short" id="projectShort">Short description</p>
+                    <div class="project-detail-actions mt-4">
+                        <a href="#" id="githubBtn" class="btn btn-primary-custom me-3" target="_blank" style="display:none;">
+                            <i class="bi bi-github me-2"></i>View on GitHub
+                        </a>
+                        <a href="#" id="liveBtn" class="btn btn-success-custom me-3" target="_blank" style="display:none;">
+                            <i class="bi bi-play-circle me-2"></i>Try Live Project
+                        </a>
+                        <a href="#" id="downloadBtn" class="btn btn-outline-custom" target="_blank" style="display:none;">
+                            <i class="bi bi-download me-2"></i>Download Code
+                        </a>
+                        <a href="#" id="videoBtn" class="btn btn-video-custom" target="_blank" style="display:none;">
+                            <i class="bi bi-play-circle me-2"></i>Watch Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Image -->
+                <div class="project-detail-image mt-5" data-aos="fade-up">
+                    <img id="projectImage" src="" alt="Project Screenshot" class="img-fluid rounded-3">
+                </div>
+
+                <!-- Project Body -->
+                <div class="row mt-5">
+                    <!-- Main Content -->
+                    <div class="col-lg-8" data-aos="fade-right">
+                        <div class="project-detail-card">
+                            <h3><i class="bi bi-info-circle me-2"></i>About This Project</h3>
+                            <p id="projectDescription" class="mt-3">Full description goes here.</p>
+                        </div>
+
+                        <div class="project-detail-card mt-4">
+                            <h3><i class="bi bi-diagram-3 me-2"></i>Architecture & Workflow</h3>
+                            <p id="projectArchitecture" class="mt-3">Architecture description goes here.</p>
+                        </div>
+
+                        <!-- Screenshots Gallery -->
+                        <div class="project-detail-card mt-4" id="screenshotsSection" style="display:none;">
+                            <h3><i class="bi bi-images me-2"></i>Screenshots</h3>
+                            <div class="row mt-3" id="screenshotsGrid">
+                                <!-- Dynamically populated -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4" data-aos="fade-left">
+                        <div class="project-detail-sidebar">
+                            <h4><i class="bi bi-tools me-2"></i>Tech Stack</h4>
+                            <div class="project-tech-list mt-3" id="projectTechStack">
+                                <!-- Dynamically populated -->
+                            </div>
+                        </div>
+
+                        <div class="project-detail-sidebar mt-4">
+                            <h4><i class="bi bi-link-45deg me-2"></i>Quick Links</h4>
+                            <div class="quick-links mt-3">
+                                <a href="#" id="sideGithub" class="quick-link-item" target="_blank" style="display:none;">
+                                    <i class="bi bi-github"></i> GitHub Repository
+                                </a>
+                                <a href="#" id="sideLive" class="quick-link-item" target="_blank" style="display:none;">
+                                    <i class="bi bi-globe"></i> Live Demo
+                                </a>
+                                <a href="#" id="sideVideo" class="quick-link-item" target="_blank" style="display:none;">
+                                    <i class="bi bi-play-circle"></i> Watch Video
+                                </a>
+                                <a href="index.html#projects" class="quick-link-item">
+                                    <i class="bi bi-grid"></i> All Projects
+                                </a>
+                                <a href="index.html#contact" class="quick-link-item">
+                                    <i class="bi bi-chat-dots"></i> Discuss This Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Not Found State -->
+            <div id="projectNotFound" style="display: none;" class="text-center py-5">
+                <i class="bi bi-exclamation-circle" style="font-size: 4rem; color: var(--accent-color);"></i>
+                <h3 class="mt-3">Project Not Found</h3>
+                <p class="text-muted">The project you're looking for doesn't exist.</p>
+                <a href="index.html#projects" class="btn btn-primary-custom mt-3">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <a class="footer-brand" href="index.html">
+                        <span class="brand-accent">&lt;</span>Rahul Chauhan<span class="brand-accent"> /&gt;</span>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="footer-text mb-0">&copy; 2026 Rahul Chauhan. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="footer-socials">
+                        <a href="https://github.com/selftaughtrahul" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rahul-chauhan-it/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:rahulkmch22@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Portfolio Data -->
+    <script src="data/portfolio-data.js"></script>
+    <!-- Custom JS -->
+    <script src="js/project-detail.js"></script>
+</body>
+</html>
