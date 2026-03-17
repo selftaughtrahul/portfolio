@@ -68,7 +68,7 @@ const PORTFOLIO_DATA = {
       "MySQL Tuning & Optimization",
       "Machine Learning & GenAI"
     ],
-    "resumeLink": "#"
+    "resumeLink": "data/Rahul_Python_AI_ML.pdf"
   },
   "skills": {
     "sectionTitle": "Skills & Technologies",
