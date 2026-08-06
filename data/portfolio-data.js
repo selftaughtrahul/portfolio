@@ -27,7 +27,7 @@ const PORTFOLIO_DATA = {
       "AWS & Linux Expert",
       "AI/ML Engineer",
       "GEN AI",
-      "Backend Developer",
+      "Backend Developer"
     ],
     "description": "Generative AI Engineer and Python Backend Developer with expertise in LLMs, Agentic AI, RAG pipelines, LangChain, LangGraph, FastAPI, Django, and AWS. Passionate about building scalable AI-powered applications, multi-agent systems, and production-ready backend solutions. Based in Lucknow, India.",
     "buttons": [
@@ -51,7 +51,6 @@ const PORTFOLIO_DATA = {
       "FastAPI",
       "RAG"
     ]
-  }
   },
   "socialLinks": {
     "github": "https://github.com/selftaughtrahul",
