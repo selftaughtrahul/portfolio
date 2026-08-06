@@ -1,10 +1,10 @@
 const PORTFOLIO_DATA = {
   "meta": {
-    "title": "Rahul Chauhan | Full-Stack Python & Django Developer",
-    "description": "Rahul Chauhan - Full-Stack Python & Django Developer | AWS, Linux Server, MySQL, Machine Learning, CEH Certified",
-    "keywords": "Rahul Chauhan, Python Developer, Django, AWS, Linux Server, MySQL, Machine Learning, Deep Learning, GenAI, CEH, Lucknow",
-    "author": "Rahul Chauhan"
-  },
+  "title": "Rahul Chauhan | Generative AI Engineer | LLM | Agentic AI | Python Developer",
+  "description": "Rahul Chauhan is a Generative AI Engineer specializing in LLMs, Agentic AI, RAG pipelines, LangChain, LangGraph, FastAPI, Python, ChromaDB, and AI-powered backend applications.",
+  "keywords": "Rahul Chauhan, Generative AI Engineer, LLM Engineer, Agentic AI, LangChain, LangGraph, CrewAI, RAG, ChromaDB, FastAPI, Python Developer, AI Engineer, Prompt Engineering, Vector Database, Groq, Google Gemini, Hugging Face, Lucknow",
+  "author": "Rahul Chauhan"
+},
   "navbar": {
     "brand": "Rahul Chauhan",
     "links": [
@@ -28,21 +28,29 @@ const PORTFOLIO_DATA = {
       "AI/ML Engineer",
       "GEN AI",
       "Backend Developer",
-      "CEH Certified"
     ],
-    "description": "Full-Stack Python & Django Developer with expertise in AWS, Linux Server Management, MySQL Optimization, Machine Learning, and Cybersecurity. Based in Lucknow, India.",
-    "buttons": [
+      "description": "Generative AI Engineer and Python Backend Developer with expertise in LLMs, Agentic AI, RAG pipelines, LangChain, LangGraph, FastAPI, Django, and AWS. Passionate about building scalable AI-powered applications, multi-agent systems, and production-ready backend solutions. Based in Lucknow, India."    "buttons": [
       { "label": "View Projects", "href": "#projects", "icon": "bi-folder2-open", "class": "btn-primary-custom" },
       { "label": "Get in Touch", "href": "#contact", "icon": "bi-envelope", "class": "btn-outline-custom" }
     ],
     "profileImage": "images/profile.jpg",
     "profileAlt": "Rahul - Software Professional",
-    "codeWindow": {
-      "filename": "developer.py",
-      "name": "Rahul Chauhan",
-      "role": "Python Developer",
-      "skills": ["Python", "Django", "AWS", "Linux", "ML", "MySQL"]
-    }
+   "codeWindow": {
+    "filename": "agentic_ai.py",
+    "name": "Rahul Chauhan",
+    "role": "Generative AI Engineer",
+    "skills": [
+      "Python",
+      "Django,
+      "AWS",
+      "Linux",
+      "LLMs",
+      "LangGraph",
+      "LangChain",
+      "FastAPI",
+      "RAG"
+    ]
+  }
   },
   "socialLinks": {
     "github": "https://github.com/selftaughtrahul",
@@ -50,25 +58,27 @@ const PORTFOLIO_DATA = {
     "email": "rahulkmch22@gmail.com"
   },
   "about": {
-    "sectionTitle": "About Me",
-    "subtitle": "Full-Stack Python & Django Developer",
-    "stats": [
-      { "icon": "bi-code-slash", "count": 3, "label": "Years Experience" },
-      { "icon": "bi-folder-check", "count": 8, "label": "Projects Completed" },
-      { "icon": "bi-cpu", "count": 10, "label": "Technologies" },
-      { "icon": "bi-cloud-check", "count": 6, "label": "Certifications" }
-    ],
-    "paragraphs": [
-      "I am Rahul Chauhan, a Full-Stack Python and Django Developer with 3+ years of professional experience. I specialize in building robust backend systems, managing AWS cloud infrastructure and Linux servers, and optimizing MySQL databases for high-performance applications.",
-      "My passion extends to Machine Learning, Deep Learning, and Generative AI. I hold a Certified Ethical Hacker (CEH) certification and multiple credentials in AI/ML from Codebasics. I'm driven by solving complex problems and delivering production-ready solutions."
-    ],
-    "highlights": [
-      "Python & Django Development",
-      "AWS & Linux Server Management",
-      "MySQL Tuning & Optimization",
-      "Machine Learning & GenAI"
-    ],
-    "resumeLink": "data/Rahul_Python_AI_ML.pdf"
+  "sectionTitle": "About Me",
+  "subtitle": "Generative AI Engineer | Python Backend Developer",
+  "stats": [
+    { "icon": "bi-code-slash", "count": 4, "label": "Years Experience" },
+    { "icon": "bi-folder-check", "count": 12, "label": "Projects Completed" },
+    { "icon": "bi-cpu", "count": 20, "label": "Technologies" },
+    { "icon": "bi-patch-check", "count": 4, "label": "AI Certifications" }
+  ],
+  "paragraphs": [
+    "I am Rahul Chauhan, a Generative AI Engineer and Python Backend Developer with 4+ years of experience building scalable backend applications and AI-powered solutions. My expertise includes Large Language Models (LLMs), Agentic AI, Retrieval-Augmented Generation (RAG), LangChain, LangGraph, FastAPI, and Python.",
+    "I enjoy designing intelligent applications using multi-agent architectures, vector databases, prompt engineering, and cloud-native technologies. With a strong foundation in backend engineering, REST APIs, AWS, Linux, and database design, I build production-ready AI systems that solve real-world business problems."
+  ],
+  "highlights": [
+    "Generative AI & LLM Applications",
+    "Agentic AI & Multi-Agent Systems",
+    "Python, FastAPI & Django",
+    "RAG & Vector Databases",
+    "AWS Cloud & Linux",
+    "Production AI Deployment"
+  ],
+  "resumeLink": "data/Rahul_Chauhan_Python_GenAI_Engineer.pdf"
   },
   "skills": {
     "sectionTitle": "Skills & Technologies",
