@@ -29,7 +29,8 @@ const PORTFOLIO_DATA = {
       "GEN AI",
       "Backend Developer",
     ],
-      "description": "Generative AI Engineer and Python Backend Developer with expertise in LLMs, Agentic AI, RAG pipelines, LangChain, LangGraph, FastAPI, Django, and AWS. Passionate about building scalable AI-powered applications, multi-agent systems, and production-ready backend solutions. Based in Lucknow, India."    "buttons": [
+    "description": "Generative AI Engineer and Python Backend Developer with expertise in LLMs, Agentic AI, RAG pipelines, LangChain, LangGraph, FastAPI, Django, and AWS. Passionate about building scalable AI-powered applications, multi-agent systems, and production-ready backend solutions. Based in Lucknow, India.",
+    "buttons": [
       { "label": "View Projects", "href": "#projects", "icon": "bi-folder2-open", "class": "btn-primary-custom" },
       { "label": "Get in Touch", "href": "#contact", "icon": "bi-envelope", "class": "btn-outline-custom" }
     ],
@@ -41,7 +42,7 @@ const PORTFOLIO_DATA = {
     "role": "Generative AI Engineer",
     "skills": [
       "Python",
-      "Django,
+      "Django",
       "AWS",
       "Linux",
       "LLMs",
