@@ -366,16 +366,23 @@ function renderExperience(exp) {
     document.getElementById('expTitle').textContent = exp.sectionTitle;
     document.getElementById('expSubtitle').textContent = exp.sectionSubtitle || '';
 
-    const timelineEl = document.getElementById('experienceTimeline');
-    timelineEl.innerHTML = exp.items.map((item, i) => {
-        const aosDir = i % 2 === 0 ? 'fade-right' : 'fade-left';
+    const roadmapEl = document.getElementById('experienceTimeline');
+
+    // Data is newest first (resume order); the roadmap reads left to right as career progression
+    const ordered = [...exp.items].reverse();
+
+    roadmapEl.innerHTML = ordered.map((item, i) => {
         const yearMatch = item.date.match(/(\d{4})/);
         const year = yearMatch ? yearMatch[1] : '';
+        const isCurrent = /present|current/i.test(item.date);
         return `
-        <div class="timeline-item" data-aos="${aosDir}"${i > 0 ? ` data-aos-delay="${i * 150}"` : ''}>
-            <div class="timeline-dot"></div>
-            ${year ? `<span class="timeline-year-badge">${year}</span>` : ''}
-            <div class="timeline-content">
+        <div class="roadmap-item${isCurrent ? ' is-current' : ''}" data-aos="fade-up" data-aos-delay="${i * 150}">
+            <div class="roadmap-node"><span class="roadmap-dot"></span></div>
+            <div class="roadmap-stop">
+                ${year ? `<span class="roadmap-year">${year}</span>` : ''}
+                ${isCurrent ? '<span class="roadmap-current-pill">Current</span>' : ''}
+            </div>
+            <div class="timeline-content roadmap-card">
                 <div class="timeline-header">
                     <h4 class="timeline-title">${item.title}</h4>
                     <span class="timeline-company">${item.company}</span>
