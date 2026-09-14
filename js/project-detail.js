@@ -38,6 +38,21 @@ function renderProjectDetail(project) {
     document.getElementById('projectDescription').textContent = project.fullDescription;
     document.getElementById('projectArchitecture').textContent = project.architecture;
 
+    // Context line (professional vs personal work)
+    if (project.context) {
+        const contextEl = document.getElementById('projectContext');
+        contextEl.innerHTML = `<i class="bi bi-briefcase me-2"></i>${project.context}`;
+        contextEl.style.display = 'block';
+    }
+
+    // Key highlights
+    if (project.highlights && project.highlights.length > 0) {
+        document.getElementById('highlightsSection').style.display = 'block';
+        document.getElementById('projectHighlights').innerHTML = project.highlights
+            .map(h => `<li>${h}</li>`)
+            .join('');
+    }
+
     // Project image
     const img = document.getElementById('projectImage');
     if (project.image && !project.image.includes('placeholder')) {
@@ -120,6 +135,7 @@ function getCategoryIcon(category) {
         'Machine Learning': 'cpu',
         'Deep Learning': 'gpu-card',
         'Backend Development': 'server',
+        'Business Automation': 'gear-wide-connected',
         'Cloud & DevOps': 'cloud'
     };
     return icons[category] || 'code-slash';

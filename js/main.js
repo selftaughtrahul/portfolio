@@ -24,12 +24,14 @@ function initSite() {
     renderCertifications(data.certifications);
     renderProjects(data.projects);
     renderExperience(data.experience);
+    renderEducation(data.education);
     renderContact(data.contact, data.socialLinks);
     renderFooter(data.navbar.brand, data.footer, data.socialLinks);
 
     // Init behaviors
     initAOS();
     initNavbar();
+    initScrollProgress();
     initTypingEffect(data.hero.typingTexts);
     initParticles();
     initBackToTop();
@@ -47,6 +49,13 @@ function renderNavbar(navbar) {
     navLinks.innerHTML = navbar.links.map(link =>
         `<li class="nav-item"><a class="nav-link" href="${link.href}">${link.label}</a></li>`
     ).join('');
+
+    const ctaEl = document.getElementById('navCta');
+    if (ctaEl && navbar.cta) {
+        ctaEl.innerHTML = `<a href="${navbar.cta.href}" class="btn btn-nav-cta" download>
+            <i class="bi ${navbar.cta.icon} me-2"></i>${navbar.cta.label}
+        </a>`;
+    }
 }
 
 /* ===================== RENDER HERO ===================== */
@@ -55,6 +64,20 @@ function renderHero(hero, social) {
     document.getElementById('heroName').textContent = hero.name;
     document.getElementById('heroTypingPrefix').textContent = hero.typingPrefix + ' ';
     document.getElementById('heroDescription').textContent = hero.description;
+
+    // Availability pill
+    const pill = document.getElementById('availabilityPill');
+    if (hero.availability) {
+        pill.innerHTML = `<span class="availability-dot"></span>${hero.availability}`;
+    } else {
+        pill.style.display = 'none';
+    }
+
+    // Trust badges
+    const badgesEl = document.getElementById('heroBadges');
+    badgesEl.innerHTML = (hero.badges || []).map(b =>
+        `<span class="hero-badge"><i class="bi ${b.icon}"></i>${b.label}</span>`
+    ).join('');
 
     // Buttons
     const buttonsEl = document.getElementById('heroButtons');
@@ -104,7 +127,7 @@ function renderAbout(about) {
     statsEl.innerHTML = about.stats.map(stat => `
         <div class="stat-card">
             <div class="stat-icon"><i class="bi ${stat.icon}"></i></div>
-            <h3 class="stat-number" data-count="${stat.count}">0</h3>
+            <h3 class="stat-number" data-count="${stat.count}" data-suffix="${stat.suffix ?? '+'}">0</h3>
             <p class="stat-label">${stat.label}</p>
         </div>
     `).join('');
@@ -156,6 +179,18 @@ function renderSkills(skills) {
             ${rightBars.map(bar => buildProgressBar(bar)).join('')}
         </div>
     `;
+
+    renderMarquee(skills.marquee);
+}
+
+/* ===================== RENDER TECH MARQUEE ===================== */
+function renderMarquee(items) {
+    const el = document.getElementById('techMarquee');
+    if (!el || !items || items.length === 0) return;
+
+    // Duplicated so the CSS translate loop has no visible seam
+    const chips = items.map(t => `<span class="marquee-chip">${t}</span>`).join('');
+    el.innerHTML = chips + chips;
 }
 
 function buildProgressBar(bar) {
@@ -225,7 +260,9 @@ function renderProjectCards(projects, grid) {
         const hasMultiple = images.length > 1;
 
         let imageHTML;
-        if (hasImages) {
+        if (project.coverImage) {
+            imageHTML = `<img src="${project.coverImage}" alt="${project.title}" class="project-cover-img" loading="lazy">`;
+        } else if (hasImages) {
             imageHTML = `
                 <div class="project-slideshow" data-slide-index="0">
                     ${images.map((src, i) => `<img src="${src}" alt="${project.title} - ${i + 1}" class="slide-img${i === 0 ? ' active' : ''}" loading="lazy">`).join('')}
@@ -244,6 +281,7 @@ function renderProjectCards(projects, grid) {
                     </div>
                 </div>
                 ${project.videoLink ? `<a href="${project.videoLink}" target="_blank" class="project-video-badge" onclick="event.stopPropagation();" title="Watch Video"><i class="bi bi-play-circle-fill"></i></a>` : ''}
+                ${isProfessional(project) ? '<span class="project-pro-ribbon"><i class="bi bi-briefcase-fill me-1"></i>Professional</span>' : ''}
                 <div class="project-card-body">
                     <span class="project-card-category">${project.category}</span>
                     <h5 class="project-card-title">${project.title}</h5>
@@ -309,9 +347,14 @@ function getCategoryIcon(category) {
         'Machine Learning': 'cpu',
         'Deep Learning': 'gpu-card',
         'Backend Development': 'server',
+        'Business Automation': 'gear-wide-connected',
         'Cloud & DevOps': 'cloud'
     };
     return icons[category] || 'code-slash';
+}
+
+function isProfessional(project) {
+    return Boolean(project.context && project.context.startsWith('Professional'));
 }
 
 function openProject(projectId) {
@@ -321,6 +364,7 @@ function openProject(projectId) {
 /* ===================== RENDER EXPERIENCE ===================== */
 function renderExperience(exp) {
     document.getElementById('expTitle').textContent = exp.sectionTitle;
+    document.getElementById('expSubtitle').textContent = exp.sectionSubtitle || '';
 
     const timelineEl = document.getElementById('experienceTimeline');
     timelineEl.innerHTML = exp.items.map((item, i) => {
@@ -336,7 +380,10 @@ function renderExperience(exp) {
                     <h4 class="timeline-title">${item.title}</h4>
                     <span class="timeline-company">${item.company}</span>
                 </div>
-                <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>${item.date}</span>
+                <div class="timeline-meta">
+                    <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>${item.date}</span>
+                    ${item.location ? `<span class="timeline-date"><i class="bi bi-geo-alt me-2"></i>${item.location}</span>` : ''}
+                </div>
                 <p class="timeline-description">${item.description}</p>
                 <div class="timeline-tech">
                     ${item.techBadges.map(t => `<span class="tech-badge">${t}</span>`).join('')}
@@ -347,6 +394,29 @@ function renderExperience(exp) {
             </div>
         </div>`;
     }).join('');
+}
+
+/* ===================== RENDER EDUCATION ===================== */
+function renderEducation(edu) {
+    if (!edu) return;
+
+    document.getElementById('eduTitle').textContent = edu.sectionTitle;
+    document.getElementById('eduSubtitle').textContent = edu.sectionSubtitle || '';
+
+    const gridEl = document.getElementById('educationGrid');
+    gridEl.innerHTML = edu.items.map((item, i) => `
+        <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${(i + 1) * 100}">
+            <div class="education-card">
+                <div class="education-icon"><i class="bi ${item.icon}"></i></div>
+                <div class="education-info">
+                    <h5>${item.degree}</h5>
+                    <p class="education-institution">${item.institution}</p>
+                    ${item.date ? `<span class="education-date"><i class="bi bi-calendar3 me-1"></i>${item.date}</span>` : ''}
+                    ${item.status ? `<span class="education-status status-${item.status.toLowerCase()}">${item.status}</span>` : ''}
+                </div>
+            </div>
+        </div>
+    `).join('');
 }
 
 /* ===================== RENDER CONTACT ===================== */
@@ -548,7 +618,7 @@ function initCounters() {
             if (entry.isIntersecting) {
                 const el = entry.target;
                 const target = parseInt(el.getAttribute('data-count'));
-                animateCounter(el, target);
+                animateCounter(el, target, el.getAttribute('data-suffix') || '');
                 observer.unobserve(el);
             }
         });
@@ -557,18 +627,30 @@ function initCounters() {
     counters.forEach(counter => observer.observe(counter));
 }
 
-function animateCounter(element, target) {
+function animateCounter(element, target, suffix) {
     let current = 0;
     const increment = target / 40;
     const timer = setInterval(() => {
         current += increment;
         if (current >= target) {
-            element.textContent = target + '+';
+            element.textContent = target + suffix;
             clearInterval(timer);
         } else {
-            element.textContent = Math.floor(current) + '+';
+            element.textContent = Math.floor(current) + suffix;
         }
     }, 40);
+}
+
+/* ===================== SCROLL PROGRESS BAR ===================== */
+function initScrollProgress() {
+    const bar = document.getElementById('scrollProgress');
+    if (!bar) return;
+
+    window.addEventListener('scroll', () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+        bar.style.width = percent + '%';
+    });
 }
 
 /* ===================== CONTACT FORM ===================== */

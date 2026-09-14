@@ -57,6 +57,7 @@
                 <div class="project-detail-header" data-aos="fade-up">
                     <span class="project-detail-category" id="projectCategory">Category</span>
                     <h1 class="project-detail-title" id="projectTitle">Project Title</h1>
+                    <p class="project-detail-context" id="projectContext" style="display:none;"></p>
                     <p class="project-detail-short" id="projectShort">Short description</p>
                     <div class="project-detail-actions mt-4">
                         <a href="#" id="githubBtn" class="btn btn-primary-custom me-3" target="_blank" style="display:none;">
@@ -86,6 +87,13 @@
                         <div class="project-detail-card">
                             <h3><i class="bi bi-info-circle me-2"></i>About This Project</h3>
                             <p id="projectDescription" class="mt-3">Full description goes here.</p>
+                        </div>
+
+                        <div class="project-detail-card mt-4" id="highlightsSection" style="display:none;">
+                            <h3><i class="bi bi-lightning-charge me-2"></i>Key Highlights</h3>
+                            <ul class="project-highlight-list mt-3" id="projectHighlights">
+                                <!-- Dynamically populated -->
+                            </ul>
                         </div>
 
                         <div class="project-detail-card mt-4">
