@@ -1,14 +1,14 @@
 const PORTFOLIO_DATA = {
   "meta": {
-    "title": "Rahul Chauhan | Python & Generative AI Engineer | LLM, RAG & Agentic AI",
-    "description": "Rahul Chauhan - Python & Generative AI Engineer with 4+ years of experience building LLM-powered applications, RAG pipelines, Agentic AI systems and business automation with Python, Django, FastAPI, LangChain, LangGraph and AWS.",
-    "keywords": "Rahul Chauhan, Python Developer, Generative AI Engineer, LLM Engineer, Agentic AI, LangChain, LangGraph, CrewAI, RAG, Prompt Engineering, FastAPI, Django, Vector Database, ChromaDB, AWS, Gurugram, India",
-    "author": "Rahul Chauhan",
+    "title": "Rahul Kumar Chauhan | Python & Generative AI Engineer | LLM, RAG & Agentic AI",
+    "description": "Rahul Kumar Chauhan - Python & Generative AI Engineer in Noida. 4+ years of software engineering, including supply chain systems, and 2 years building LLM applications, RAG pipelines, and business automation. Immediate joiner.",
+    "keywords": "Rahul Kumar Chauhan, Python, Generative AI, LLM, RAG, LangChain, LangGraph, LlamaIndex, CrewAI, Django, FastAPI, AWS, Noida",
+    "author": "Rahul Kumar Chauhan",
     "ogImage": "images/og-banner.png",
     "siteUrl": "https://selftaughtrahul.github.io/portfolio/"
   },
   "navbar": {
-    "brand": "Rahul Chauhan",
+    "brand": "Rahul Kumar Chauhan",
     "links": [
       { "label": "Home", "href": "#home" },
       { "label": "About", "href": "#about" },
@@ -23,7 +23,7 @@ const PORTFOLIO_DATA = {
   },
   "hero": {
     "greeting": "Hello, I'm",
-    "name": "Rahul Chauhan",
+    "name": "Rahul Kumar Chauhan",
     "typingPrefix": "I build",
     "typingTexts": [
       "LLM-Powered Applications",
@@ -33,24 +33,24 @@ const PORTFOLIO_DATA = {
       "Business Automation Solutions",
       "Production AI on AWS"
     ],
-    "availability": "Open to Python & Generative AI Engineer roles",
-    "description": "Python & Generative AI Engineer with 4+ years of software engineering experience. I design and ship LLM applications, RAG pipelines, Agentic AI systems and automation platforms end to end \u2014 from data extraction and API design to production deployment on AWS.",
+    "availability": "Immediate Joiner \u00b7 Noida",
+    "description": "Python & Generative AI Engineer with 4+ years of software engineering experience, including supply chain management systems, and 2 years building LLM-powered applications, RAG pipelines, and business automation. I build domain-specific AI solutions and production-grade backends.",
     "badges": [
       { "icon": "bi-briefcase-fill", "label": "4+ Years Experience" },
-      { "icon": "bi-stars", "label": "Gen AI \u00b7 LLM \u00b7 Agentic AI" },
-      { "icon": "bi-geo-alt-fill", "label": "Gurugram, India" }
+      { "icon": "bi-stars", "label": "2 Years in GenAI" },
+      { "icon": "bi-geo-alt-fill", "label": "Noida \u00b7 Immediate Joiner" }
     ],
     "buttons": [
       { "label": "View Projects", "href": "#projects", "icon": "bi-folder2-open", "class": "btn-primary-custom" },
       { "label": "Download Resume", "href": "data/Rahul_Chauhan_Python_GenAI_Engineer.pdf", "icon": "bi-file-earmark-arrow-down", "class": "btn-outline-custom" }
     ],
     "profileImage": "images/profile.jpg",
-    "profileAlt": "Rahul Chauhan - Python & Generative AI Engineer",
+    "profileAlt": "Rahul Kumar Chauhan - Python & Generative AI Engineer",
     "codeWindow": {
       "filename": "agentic_ai.py",
-      "name": "Rahul Chauhan",
+      "name": "Rahul Kumar Chauhan",
       "role": "Python & Gen AI Engineer",
-      "skills": ["LLMs", "RAG", "LangGraph", "FastAPI", "AWS"]
+      "skills": ["LLMs", "RAG", "LangGraph", "Django", "AWS"]
     }
   },
   "socialLinks": {
@@ -63,60 +63,60 @@ const PORTFOLIO_DATA = {
     "subtitle": "Python & Generative AI Engineer",
     "stats": [
       { "icon": "bi-briefcase-fill", "count": 4, "suffix": "+", "label": "Years Experience" },
-      { "icon": "bi-folder-check", "count": 12, "suffix": "+", "label": "Projects Delivered" },
-      { "icon": "bi-hdd-network", "count": 100, "suffix": "+", "label": "REST APIs Maintained" },
-      { "icon": "bi-patch-check-fill", "count": 5, "suffix": "", "label": "Certifications" }
+      { "icon": "bi-robot", "count": 2, "suffix": "", "label": "Years in GenAI" },
+      { "icon": "bi-folder-check", "count": 12, "suffix": "", "label": "Projects" },
+      { "icon": "bi-patch-check-fill", "count": 4, "suffix": "", "label": "Certifications" }
     ],
     "paragraphs": [
-      "I'm Rahul Chauhan, a Python & Generative AI Engineer based in Gurugram with 4+ years of software engineering experience. I build LLM-powered applications, RAG pipelines, Agentic AI systems and business automation solutions that go all the way to production.",
-      "My work spans organizational domain intelligence, lead generation, website data extraction, content automation and campaign workflows \u2014 backed by strong fundamentals in Python, Django, FastAPI, SQL, AWS and Linux. I've owned full delivery cycles: requirement gathering, solution planning, estimation, implementation, testing, client demos and release management."
+      "I'm Rahul Kumar Chauhan, a Python & Generative AI Engineer based in Noida and an immediate joiner. I have 4+ years of software engineering experience, including building and supporting supply chain management systems, and 2 years developing LLM-powered applications, RAG pipelines, and business automation solutions.",
+      "I develop domain-specific AI solutions and production-grade backend applications with Python, Django, Django REST Framework, FastAPI, PostgreSQL, MySQL, and AWS."
     ],
     "highlights": [
-      "LLM Applications & Prompt Engineering",
-      "Agentic AI with LangGraph & CrewAI",
-      "RAG, Embeddings & Semantic Search",
-      "Python, Django & FastAPI REST APIs",
-      "Business & Workflow Automation",
-      "AWS, Linux & Production Deployment"
+      "LLMs, RAG, Agentic AI & Tool Calling",
+      "LangChain, LangGraph, LlamaIndex & CrewAI",
+      "Django, DRF & FastAPI",
+      "PostgreSQL & MySQL",
+      "AWS EC2, RDS & S3",
+      "Supply Chain & Business Automation"
     ],
     "resumeLink": "data/Rahul_Chauhan_Python_GenAI_Engineer.pdf"
   },
   "skills": {
     "sectionTitle": "Skills & Technologies",
-    "sectionSubtitle": "The stack I use to take AI products from idea to production",
+    "sectionSubtitle": "The stack from my resume, used for generative AI products and production backends",
     "categories": [
       {
         "icon": "bi-stars",
-        "title": "Generative AI",
-        "tags": ["LLMs", "RAG", "Agentic AI", "LangChain", "LangGraph", "CrewAI", "Prompt Engineering"]
+        "title": "GenAI",
+        "tags": ["LLMs", "RAG", "Agentic AI", "Prompt Engineering", "Tool Calling"]
       },
       {
-        "icon": "bi-robot",
-        "title": "AI / ML",
-        "tags": ["NLP", "Machine Learning", "Deep Learning", "Embeddings", "Semantic Search", "Evaluation"]
+        "icon": "bi-diagram-3",
+        "title": "Frameworks",
+        "tags": ["LangChain", "LangGraph", "LlamaIndex", "CrewAI", "DeepEval", "Ragas", "LangSmith"]
       },
       {
         "icon": "bi-layers",
         "title": "Backend",
-        "tags": ["Python", "Django", "FastAPI", "REST APIs", "SQL", "MySQL"]
+        "tags": ["Python", "Django", "Django REST Framework", "FastAPI", "REST APIs", "PostgreSQL", "MySQL"]
       },
       {
         "icon": "bi-cloud",
         "title": "Cloud & DevOps",
-        "tags": ["AWS", "Linux", "Docker", "Git", "CI/CD"]
+        "tags": ["AWS EC2", "RDS", "S3", "Linux", "Docker", "Git", "CI/CD"]
       }
     ],
     "marquee": [
-      "Python", "Django", "FastAPI", "LangChain", "LangGraph", "CrewAI", "LangSmith",
-      "ChromaDB", "Hugging Face", "Groq", "Google Gemini", "MySQL", "AWS", "Linux", "Docker", "Git"
+      "Python", "Django", "DRF", "FastAPI", "LangChain", "LangGraph", "LlamaIndex", "CrewAI",
+      "LangSmith", "DeepEval", "Ragas", "PostgreSQL", "MySQL", "AWS", "Linux", "Docker"
     ],
     "progressBars": [
-      { "label": "Python & Backend Engineering", "percent": 95 },
-      { "label": "Generative AI & LLM Applications", "percent": 92 },
-      { "label": "RAG & Vector Search", "percent": 90 },
-      { "label": "Agentic AI (LangGraph / CrewAI)", "percent": 88 },
-      { "label": "AWS & Linux Deployment", "percent": 85 },
-      { "label": "NLP & Machine Learning", "percent": 85 }
+      { "label": "Python, Django & FastAPI", "percent": 95 },
+      { "label": "Generative AI & RAG", "percent": 92 },
+      { "label": "LangChain & LangGraph", "percent": 90 },
+      { "label": "Agentic AI & Tool Calling", "percent": 88 },
+      { "label": "AWS EC2, RDS & S3", "percent": 85 },
+      { "label": "PostgreSQL & MySQL", "percent": 82 }
     ]
   },
   "certifications": {
@@ -158,15 +158,6 @@ const PORTFOLIO_DATA = {
         "credentialId": "CB-69-517401",
         "image": "",
         "link": "https://codebasics.io/certificate/CB-69-517401"
-      },
-      {
-        "icon": "bi-shield-check",
-        "title": "Certified Ethical Hacker (CEH)",
-        "issuer": "WsCube Tech",
-        "date": "Issued: Sep 2023",
-        "credentialId": "ws/2023/1/662",
-        "image": "",
-        "link": "https://drive.google.com/file/d/1oZoRvQUjC4kReqT_st0eg0fVOECKKPUq/view"
       }
     ]
   },
@@ -183,22 +174,22 @@ const PORTFOLIO_DATA = {
     "items": [
       {
         "id": "hybrid-crag-chatbot",
-        "title": "Hybrid C-RAG Chatbot with Long-Term Memory",
-        "shortDescription": "Corrective RAG chatbot built with LangGraph, combining document grounded answers with general chat, dual memory and full LangSmith observability.",
-        "fullDescription": "A hybrid Corrective RAG (C-RAG) chatbot delivered in a professional role at Sortstring Solutions. The assistant routes between retrieval grounded answering and general chatbot conversation, so it stays useful whether or not the question is covered by the knowledge base. It is built on LangGraph with both short-term conversation memory and long-term persistent memory, and every run is traced in LangSmith for observability, debugging and quality review.",
+        "title": "Hybrid RAG Chatbot with Long-Term Memory",
+        "shortDescription": "Hybrid RAG chatbot built with LangGraph, short-term and long-term memory, retrieval workflows, and LangSmith observability.",
+        "fullDescription": "A Hybrid RAG chatbot built at Sortstring Solutions with LangGraph. It uses short-term and long-term memory, retrieval workflows, and LangSmith for observability.",
         "context": "Professional work \u00b7 Sortstring Solutions LLP",
-        "techStack": ["Python", "LangGraph", "LangChain", "LangSmith", "RAG", "Vector Database", "FastAPI", "MySQL"],
+        "techStack": ["Python", "LangGraph", "RAG", "LangSmith"],
         "category": "AI / Generative AI",
         "coverImage": "images/projects/hybrid-crag-chatbot/cover.png",
         "image": "images/projects/hybrid-crag-chatbot/cover.png",
         "screenshots": [],
         "highlights": [
-          "Hybrid routing between corrective RAG retrieval and general chat",
-          "Short-term plus long-term memory for continuity across sessions",
-          "Corrective retrieval step that re-checks weak context before answering",
-          "LangSmith tracing for observability and response quality review"
+          "Hybrid RAG chatbot",
+          "Short-term and long-term memory",
+          "Retrieval workflows",
+          "LangSmith-based observability"
         ],
-        "architecture": "LangGraph models the assistant as a stateful graph. An initial node classifies the incoming message and routes it either to the retrieval path or the general conversation path. On the retrieval path, documents are fetched from the vector store, graded for relevance, and low-quality context triggers a corrective re-retrieval before generation. Short-term memory carries the active conversation, while long-term memory persists durable facts across sessions. LangSmith instruments the whole graph so each node, prompt and retrieval call can be traced and evaluated.",
+        "architecture": "LangGraph runs the chatbot. Retrieval workflows pull context for answers. Short-term memory holds the active conversation, and long-term memory keeps context across sessions. LangSmith records runs for observability.",
         "githubLink": "",
         "liveLink": "",
         "videoLink": "",
@@ -234,8 +225,8 @@ const PORTFOLIO_DATA = {
       {
         "id": "supply-chain-management-system",
         "title": "Dairy Supply Chain Management Platform",
-        "shortDescription": "End-to-end SCM platform for the dairy industry covering Demand, Delivery and Dispatch Management plus Sales Force Automation, backed by 100+ REST APIs.",
-        "fullDescription": "A complete Supply Chain Management System built for the dairy industry at Sortstring Solutions. The platform covers Demand Management, Delivery Management, Dispatch Management and Sales Force Automation (SFA) as connected modules. I maintained 100+ REST APIs and the supporting backend systems that power downstream data and automation workflows for 3+ enterprise clients, and owned delivery from requirement gathering through client demonstrations and production release.",
+        "shortDescription": "Supply chain system for the dairy industry covering Demand, Delivery, Dispatch, and Sales Force Automation.",
+        "fullDescription": "A Supply Chain Management System built and maintained for the dairy industry at Sortstring Solutions. It covers Demand Management, Delivery Management, Dispatch Management, and Sales Force Automation (SFA). Delivery ran from requirement gathering and solution planning through implementation, testing, client demonstrations, and production deployment on AWS with Linux servers.",
         "context": "Professional work \u00b7 Sortstring Solutions LLP",
         "techStack": ["Python", "Django", "REST APIs", "MySQL", "AWS", "Linux", "Git"],
         "category": "Backend Development",
@@ -243,12 +234,12 @@ const PORTFOLIO_DATA = {
         "image": "images/projects/supply-chain-management-system/cover.png",
         "screenshots": [],
         "highlights": [
-          "Demand, Delivery, Dispatch and Sales Force Automation modules",
-          "100+ REST APIs maintained for downstream data and automation workflows",
-          "Serving 3+ enterprise clients in production",
-          "Owned the full lifecycle: requirements, estimation, testing, demos, release"
+          "Demand, Delivery, and Dispatch Management",
+          "Sales Force Automation (SFA)",
+          "Requirement gathering through production deployment",
+          "Deployed on AWS with Linux servers"
         ],
-        "architecture": "A Django backend exposes a versioned REST API surface consumed by web dashboards and field sales clients. Domain modules are separated by responsibility (demand, delivery, dispatch, SFA) over a normalized MySQL schema, with reporting endpoints feeding downstream analytics and automation jobs. Deployments run on AWS EC2 with Linux server configuration, monitoring and a controlled release process.",
+        "architecture": "The system is split into Demand, Delivery, Dispatch, and Sales Force Automation modules. It was taken from requirements and solution planning through implementation, testing, client demonstrations, and production deployment. Production runs on AWS using Linux servers, with server configuration, monitoring, troubleshooting, and release management.",
         "githubLink": "",
         "liveLink": "",
         "videoLink": "",
@@ -256,22 +247,21 @@ const PORTFOLIO_DATA = {
       },
       {
         "id": "domain-intelligence-lead-extraction",
-        "title": "Organizational Domain Intelligence & Lead Extraction",
-        "shortDescription": "Custom applications that classify organizational domains and extract qualified leads from website data at scale.",
-        "fullDescription": "A set of custom applications built as a Generative AI Engineer to give sales and growth teams reliable organizational intelligence. The system ingests website and public domain data, classifies each organization by domain and category, and extracts structured, qualified lead records. It replaces slow manual research with a repeatable automated pipeline that produces clean, reviewable output.",
-        "context": "Professional work \u00b7 Freelance, Gurugram",
-        "techStack": ["Python", "LLMs", "Prompt Engineering", "Web Data Extraction", "FastAPI", "SQL", "Pandas"],
+        "title": "Domain Classification & Lead Extraction",
+        "shortDescription": "Custom AI applications for domain-specific classification, lead extraction, and business-domain intelligence.",
+        "fullDescription": "Custom AI applications built as a Generative AI Engineer for domain-specific classification, lead extraction, and business-domain intelligence.",
+        "context": "Professional work \u00b7 Freelancer, Gurugram",
+        "techStack": ["Python", "LLMs", "Agentic AI", "Prompt Engineering"],
         "category": "Business Automation",
         "coverImage": "images/projects/domain-intelligence-lead-extraction/cover.png",
         "image": "images/projects/domain-intelligence-lead-extraction/cover.png",
         "screenshots": [],
         "highlights": [
-          "Automated organizational domain classification",
-          "Structured lead extraction from website and public data",
-          "LLM-assisted enrichment with schema-validated output",
-          "Replaces manual research with a repeatable pipeline"
+          "Domain-specific classification",
+          "Lead extraction",
+          "Business-domain intelligence"
         ],
-        "architecture": "A extraction layer collects website and public domain data, which is normalized and cleaned before classification. An LLM-assisted classification stage assigns domain and category labels against a controlled taxonomy, and outputs are validated into a fixed schema so downstream consumers get predictable records. Qualified leads are persisted to SQL and exposed through internal APIs and exports for the sales workflow.",
+        "architecture": "The applications classify inputs by domain, extract leads, and produce business-domain intelligence for operational workflows.",
         "githubLink": "",
         "liveLink": "",
         "videoLink": "",
@@ -280,21 +270,21 @@ const PORTFOLIO_DATA = {
       {
         "id": "content-campaign-automation",
         "title": "Content Creation & Campaign Automation Platform",
-        "shortDescription": "End-to-end content and campaign management application covering data extraction, generation, scheduling and deployment, with a Content Creator Intelligence System.",
-        "fullDescription": "A content creation and campaign management application that covers the entire workflow from data extraction through to deployment. Alongside it sits a Content Creator Intelligence System that analyses creators and content signals to inform what gets produced and promoted. The goal is to compress a manual, multi-tool content operation into one automated pipeline.",
-        "context": "Professional work \u00b7 Freelance, Gurugram",
-        "techStack": ["Python", "LLMs", "LangChain", "FastAPI", "Prompt Engineering", "SQL", "AWS"],
+        "shortDescription": "Content creation and campaign workflow from data extraction and content generation through campaign deployment, with a Content Creator Intelligence System.",
+        "fullDescription": "A content creation and campaign management workflow covering data extraction, content generation, and campaign deployment, together with a Content Creator Intelligence System.",
+        "context": "Professional work \u00b7 Freelancer, Gurugram",
+        "techStack": ["Python", "LLMs", "Prompt Engineering", "Content Automation"],
         "category": "Business Automation",
         "coverImage": "images/projects/content-campaign-automation/cover.png",
         "image": "images/projects/content-campaign-automation/cover.png",
         "screenshots": [],
         "highlights": [
-          "Single pipeline from data extraction to campaign deployment",
-          "LLM-driven content generation with reviewable drafts",
-          "Content Creator Intelligence System for creator and content signals",
-          "Campaign workflow automation replacing manual multi-tool steps"
+          "Data extraction",
+          "Content generation",
+          "Campaign deployment",
+          "Content Creator Intelligence System"
         ],
-        "architecture": "The pipeline starts with a data extraction stage that gathers source material and creator signals. A generation stage builds campaign content through prompt-engineered LLM calls with structured outputs, keeping drafts reviewable before anything ships. A campaign layer handles scheduling and deployment, while the Content Creator Intelligence System aggregates performance and creator data to feed the next cycle of content decisions.",
+        "architecture": "The workflow moves from data extraction to content generation and then campaign deployment. A Content Creator Intelligence System is part of the same work.",
         "githubLink": "",
         "liveLink": "",
         "videoLink": "",
@@ -473,48 +463,45 @@ const PORTFOLIO_DATA = {
   },
   "experience": {
     "sectionTitle": "Experience",
-    "sectionSubtitle": "4+ years building backend systems and AI products in production",
+    "sectionSubtitle": "4+ years in software engineering, including 2 years building LLM applications, RAG pipelines, and business automation",
     "items": [
       {
         "title": "Generative AI Engineer",
-        "company": "Freelance",
+        "company": "Freelancer",
         "location": "Gurugram, Haryana",
-        "date": "Apr 2026 - Present",
-        "description": "Building business operation automation solutions, organizational domain intelligence applications and content automation platforms for clients.",
-        "techBadges": ["Python", "LLMs", "LangChain", "LangGraph", "CrewAI", "RAG", "FastAPI", "AWS"],
+        "date": "April 2026 \u2013 Present",
+        "description": "AI-powered business automation, domain-specific classification, and content and campaign workflows.",
+        "techBadges": ["Python", "LLMs", "RAG", "Agentic AI"],
         "achievements": [
-          "Building business operation automation solutions that automate organizational workflows",
-          "Developed custom applications for organizational domain intelligence, domain classification and lead extraction",
-          "Building a content creation and campaign management application covering the workflow from data extraction to deployment",
-          "Designing a Content Creator Intelligence System to inform content and campaign decisions"
+          "Developed AI-powered business automation solutions for automating operational workflows and repetitive business processes",
+          "Built custom AI applications for domain-specific classification, lead extraction, and business-domain intelligence",
+          "Developed a content creation and campaign management workflow covering data extraction, content generation, and campaign deployment, along with a Content Creator Intelligence System"
         ]
       },
       {
-        "title": "Python Developer",
+        "title": "Python & GenAI Developer",
         "company": "Sortstring Solutions LLP",
         "location": "Lucknow, UP",
-        "date": "Sep 2023 - Mar 2026 \u00b7 2 yrs 7 mos",
-        "description": "Owned backend and AI feature delivery for enterprise clients, from requirement gathering through production release on AWS.",
-        "techBadges": ["Python", "Django", "LangGraph", "LangSmith", "REST APIs", "MySQL", "AWS", "Linux"],
+        "date": "Sep 2023 \u2013 March 2026 \u00b7 2 yrs 7 mos",
+        "description": "Hybrid RAG chatbot and a dairy supply chain system, from requirements through production on AWS.",
+        "techBadges": ["Python", "LangGraph", "LangSmith", "RAG", "AWS", "Linux"],
         "achievements": [
-          "Developed a Hybrid RAG (C-RAG) chatbot with general chatbot capabilities using LangGraph, short-term and long-term memory, and LangSmith for observability",
-          "Built a complete Supply Chain Management System for the dairy industry, including Demand, Delivery and Dispatch Management plus Sales Force Automation (SFA) modules",
-          "Maintained 100+ REST APIs and backend systems supporting downstream data and automation workflows for 3+ enterprise clients",
-          "Owned the complete software delivery lifecycle: requirement gathering, solution planning, effort estimation, task allocation, implementation, testing, client demonstrations and production deployment",
-          "Deployed and managed production applications on AWS using Linux servers, handling server configuration, deployment, monitoring, troubleshooting and release management"
+          "Developed a Hybrid RAG chatbot using LangGraph with short-term and long-term memory, retrieval workflows, and LangSmith-based observability",
+          "Built and maintained a Supply Chain Management System for the dairy industry covering Demand Management, Delivery Management, Dispatch Management, and Sales Force Automation (SFA)",
+          "Owned the software delivery lifecycle, including requirement gathering, solution planning, implementation, testing, client demonstrations, and production deployment",
+          "Deployed and managed production applications on AWS using Linux servers, handling server configuration, application deployment, monitoring, troubleshooting, and release management"
         ]
       },
       {
         "title": "Python Developer",
-        "company": "Softfix Technologies OPC Pvt. Ltd.",
+        "company": "Softfix Technologies OPC Pvt Ltd",
         "location": "Lucknow, UP",
-        "date": "Feb 2022 - Sep 2023 \u00b7 1 yr 8 mos",
-        "description": "Built full-stack web applications across education, food delivery, ERP, CRM and HRM domains.",
-        "techBadges": ["Python", "Django", "JavaScript", "HTML", "CSS", "MySQL"],
+        "date": "Feb 2022 \u2013 Sep 2023 \u00b7 1 yr 8 mos",
+        "description": "Full-stack web applications for food delivery and HRM.",
+        "techBadges": ["Python", "Django", "JavaScript", "HTML", "CSS"],
         "achievements": [
-          "Developed full-stack web applications across education, food delivery, ERP, CRM and HRM domains using Python, Django, HTML, CSS and JavaScript",
-          "Built a Tiffin Delivery Service with subscription management, real-time order tracking and multi-vendor dashboards supporting 200+ daily orders",
-          "Delivered client-facing features end to end alongside cross-functional teams"
+          "Developed full-stack web applications for food delivery and HRM domains using Python, Django, HTML, CSS, and JavaScript",
+          "Built a Tiffin Delivery Service with subscription management, real-time order tracking, and multi-vendor dashboards supporting 200+ daily orders"
         ]
       }
     ]
@@ -541,18 +528,18 @@ const PORTFOLIO_DATA = {
   },
   "contact": {
     "sectionTitle": "Get in Touch",
-    "sectionSubtitle": "Open to Python & Generative AI Engineer roles and freelance collaborations",
+    "sectionSubtitle": "Immediate joiner based in Noida. Open to Python and Generative AI roles.",
     "infoTitle": "Let's Talk",
-    "infoText": "I'm currently open to Python and Generative AI engineering opportunities. If you're hiring, or want to discuss an LLM, RAG or automation project, I'd be glad to hear from you.",
+    "infoText": "I'm an immediate joiner based in Noida, open to Python and Generative AI engineering roles. If you're hiring, or want to discuss an LLM, RAG, or automation project, I'd be glad to hear from you.",
     "details": [
       { "icon": "bi-envelope-fill", "label": "Email", "value": "rahulkmch22@gmail.com", "href": "mailto:rahulkmch22@gmail.com" },
       { "icon": "bi-telephone-fill", "label": "Phone", "value": "+91 7355055909", "href": "tel:+917355055909" },
       { "icon": "bi-linkedin", "label": "LinkedIn", "value": "linkedin.com/in/rahul-chauhan-it", "href": "https://www.linkedin.com/in/rahul-chauhan-it/", "external": true },
       { "icon": "bi-github", "label": "GitHub", "value": "github.com/selftaughtrahul", "href": "https://github.com/selftaughtrahul", "external": true },
-      { "icon": "bi-geo-alt-fill", "label": "Location", "value": "Gurugram, Haryana, India" }
+      { "icon": "bi-geo-alt-fill", "label": "Location", "value": "Noida, India" }
     ]
   },
   "footer": {
-    "copyright": "\u00a9 2026 Rahul Chauhan. All Rights Reserved."
+    "copyright": "\u00a9 2026 Rahul Kumar Chauhan. All Rights Reserved."
   }
 };

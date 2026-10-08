@@ -1395,6 +1395,24 @@ a:hover {
 }
 
 /* ===================== RESPONSIVE ===================== */
+@media (min-width: 992px) and (max-width: 1399px) {
+    .navbar-brand {
+        font-size: 1.05rem;
+        letter-spacing: 0;
+    }
+
+    .nav-link {
+        font-size: 0.82rem;
+        padding: 6px 8px !important;
+        margin: 0;
+    }
+
+    .btn-nav-cta {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 991px) {
     .hero-section {
         text-align: center;

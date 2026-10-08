@@ -24,7 +24,7 @@ function loadProjectDetail() {
 
 function renderProjectDetail(project) {
     // Update page title
-    document.title = `${project.title} | Rahul - Portfolio`;
+    document.title = `${project.title} | Rahul Kumar Chauhan`;
 
     // Hide loading, show content
     document.getElementById('projectLoading').style.display = 'none';
